@@ -1,5 +1,14 @@
 # Running Atlantis (https://www.runatlantis.io) on Azure Container Instances
 
+Requirements:
+
+1. A Bash shell (on Windows you'll probably want [WSL](https://docs.microsoft.com/en-us/windows/wsl/about))
+
+1. [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+
+1. [openssl.exe](https://www.openssl.org/)
+
+
 Run the following commands from the same location as the master [script](atlantis-on-aci.sh).
 
 ```bash
@@ -18,9 +27,7 @@ SUFFIX=123
 
 Notes:
 
-1. Execution of the script requires installation of the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-
-1. You'll also need to [authenticate](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) from the CLI to a valid Azure subscription
+1. You'll need to [authenticate](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) from the Azure CLI to a valid Azure subscription
 
 1. The script creates the following resources on your behalf:
 
