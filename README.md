@@ -25,6 +25,8 @@ SUFFIX=123
 . ./atlantis-on-aci.sh
 ```
 
+Change the argument values as needed, and note that you can remove the 'SUFFIX' argument entirely and have a unique suffix generated on your behalf, if you wish. See the master [script](atlantis-on-aci.sh) for additional arguments you can optionally set if you don't want the defaults.
+
 Notes:
 
 1. [Authenticate](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) from the Azure CLI to a valid [Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
