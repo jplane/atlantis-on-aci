@@ -27,7 +27,13 @@ SUFFIX=123
 
 Notes:
 
-1. You'll need to [authenticate](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) from the Azure CLI to a valid Azure subscription
+1. [Authenticate](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest) from the Azure CLI to a valid [Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/)
+
+1. [Set](https://docs.microsoft.com/en-us/cli/azure/manage-azure-subscriptions-azure-cli?view=azure-cli-latest) your target Azure subscription
+
+   ```bash
+   az account set --subscription "my sub"
+   ```
 
 1. The script creates the following resources on your behalf:
 
