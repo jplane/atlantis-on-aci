@@ -6,7 +6,7 @@ Requirements:
 
 1. [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
-1. [openssl.exe](https://www.openssl.org/)
+1. [openssl](https://www.openssl.org/)
 
 
 Run the following commands from the same location as the master [script](atlantis-on-aci.sh).
