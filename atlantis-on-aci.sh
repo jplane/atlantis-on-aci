@@ -119,7 +119,7 @@ az container create \
     --azure-file-volume-account-key $STORAGE_KEY \
     --azure-file-volume-share-name "atlantis-cert-share" \
     --azure-file-volume-mount-path /mnt/atlantis-certs \
-    --image runatlantis/atlantis:latest \
+    --image ghcr.io/runatlantis/atlantis:latest \
     --os-type Linux \
     --restart-policy OnFailure \
     --cpu 1 \
