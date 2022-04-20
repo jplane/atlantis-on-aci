@@ -72,7 +72,7 @@ az storage account create \
 
 STORAGE_KEY=$(az storage account keys list \
     --account-name $ATLANTIS_STORAGE_NAME \
-    --query "[0].value" | tr -d '"')
+    --query "[0].value" -o tsv | tr -d '"')
 
 az storage container create \
     --name $ATLANTIS_STORAGE_STATE_CONTAINER_NAME \
@@ -107,7 +107,7 @@ az storage file upload \
     --account-name $ATLANTIS_STORAGE_NAME \
     --account-key $STORAGE_KEY
 
-SUB_ID=$(az account show --query "id" | tr -d '"')
+SUB_ID=$(az account show --query "id" -o tsv | tr -d '"')
 
 az container create \
     --name $ATLANTIS_CONTAINER_GROUP_NAME \
